@@ -1,6 +1,12 @@
 <h2>Magicssss Link</h2>
 
 <p>Follow this link to login:</p>
+<a href="{{ .SiteURL }}" style="text-decoration:none;">
+  <img height="80px" width="200px" style="width: 200px;" src="https://staging.insightgig.com/static/icons/insightemaillogo.png"
+      alt="Logog" />
+</a>
+<p style="color: #606062; font-size: 16px; line-height: 23px; font-weight: bold;margin-top: 0;
+          margin-bottom: 8px;">Hello, {{recipient.first-name}} {{ .Email }}</p>
 <p>
   <a style="text-decoration: none; padding: 14px 21px; display: inline-block; font-style: normal; font-weight: 500; font-size: 20px; line-height: 100%; color: #FFFFFF; background: #0A96F5; border: none;" href="{{ .ConfirmationURL }}">
     Verify Email
