@@ -20,42 +20,42 @@
     <div style="width: 50%; margin: auto;background-color: #fff; padding: 50px 25px;">
       <div style="text-align: center; margin-bottom: 30px;">
         <a href="{{ .SiteURL }}" style="text-decoration:none;">
-          <img height="80px" width="200px" style="width: 200px;"
-            src="https://staging.insightgig.com/static/icons/insightemaillogo.png" alt="{{ .SiteURL }}" />
+          <img height="80px" width="200px" src="https://staging.insightgig.com/static/icons/insightemaillogo.png"
+            alt="{{ .SiteURL }}" />
         </a>
       </div>
       <p style="color: #606062; font-size: 16px; line-height: 23px; font-weight: bold;margin-top: 0;
-          margin-bottom: 8px;">Hello, {{ .Data.firstName }}</p>
-
-      <p style="color: #979496; font-size: 16px; line-height: 23px; font-weight: 400; 
-                    margin-top: 0; margin-bottom: 8px;">
-        Thanks for signing up to InsightGig!
-      </p>
+          margin-bottom: 8px;">Hello {{ .Data.firstName }},</p>
 
       <p style="color: #979496; font-size: 16px; line-height: 23px; font-weight: 400; 
           margin-top: 0; margin-bottom: 8px;">
-        To complete your registration, please confirm your email address by clicking the link below.
+        To complete your email address change in <em>Insigtgig</em>, verify your email by clicking
+        the link
+        below:
       </p>
       <p style="margin: 30px 0; text-align: center;">
-        <a style="text-decoration: none; padding: 14px 21px; 
-                display: inline-block; font-style: normal; font-weight: 500; font-size: 20px; 
-                line-height: 100%; color: #FFFFFF; background: #0A96F5; border: none;" href="{{ .ConfirmationURL }}">
+        <a href="{{ .ConfirmationURL }}" style="text-decoration: none; padding: 14px 21px; 
+                    display: inline-block; font-style: normal; font-weight: 500; font-size: 20px; 
+                    line-height: 100%; color: #FFFFFF; background: #0A96F5; border: none;">
           Verify Email
         </a>
       </p>
       <p style="color: #979496; font-size: 16px; line-height: 23px; font-weight: 400; 
             margin-top: 0; margin-bottom: 8px;">Alternatively, you can copy the link to your browser's address bar.</p>
-      <p style="color: #979496; font-size: 16px; line-height: 23px; font-weight: 400; 
-            margin-top: 0; margin-bottom: 8px;">If you don't use this link within 48 hours, it will expire. You can
-        request a new verification link, if you need to.</p>
       <p
-        style="color: #606062; margin-top: 20px; font-weight: bold; font-size: 16px; margin-bottom: 10px; line-height: 25px">
-        Regards,<br />The InsightGig team
+        style="color: #606062; margin-top: 10px; font-weight: bold; font-size: 16px; margin-bottom: 10px; line-height: 25px;">
+        Regards,<br />The Insigtgig team
       </p>
+      <hr />
+      <p style="color: #606062; font-size: 16px; line-height: 23px; font-weight: 400; 
+                margin-top: 15px; margin-bottom: 15px;">
+        You have received this email notification because you are a member of Insigtgig. If you no
+        longer wish
+        to receive these emails, please contact Insigtgig team.</p>
       <hr />
       <div style="text-align: center;">
         <div style="margin-bottom: 20px; margin-top: 20px;">
-          <a href="{{ .SiteURL }}" style="text-decoration:none;"><img
+          <a href="https://insightgig.com/" style="text-decoration:none;"><img
               src="https://app.insightgig.com/static/icons/email-web-icon.png"
               style="width: 100%;max-width: 45px; height: 45px;margin-right: 10%;" width="100%" height="45" />
           </a>
